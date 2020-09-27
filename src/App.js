@@ -8,10 +8,10 @@ const App = props => {
       persons :[
         {name: "Uday" , age: 23},
         {name: "singh" , age: 26}
-      ],
-      otherState: 'some other state'
+      ]
     });
-
+    const [otherState, setOtherState] = useState('some other value');
+    console.log(personsState, otherState);
     const swithNameHandler = () => {
       // console.log("clicked")
       setPersonsState({
